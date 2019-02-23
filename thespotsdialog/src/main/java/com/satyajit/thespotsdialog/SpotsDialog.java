@@ -15,13 +15,14 @@ import android.widget.TextView;
 
 public class SpotsDialog extends AlertDialog {
 
+    public static Typeface typeface;
+
     public static class Builder {
 
         private Context context;
         private String message;
         private int messageId;
         private int themeId;
-        private Typeface typeface;
         private boolean cancelable = true; // default dialog behaviour
         private OnCancelListener cancelListener;
 
@@ -35,7 +36,11 @@ public class SpotsDialog extends AlertDialog {
             return this;
         }
 
+        public Builder setTypeface(Typeface typeface2) {
+            typeface = typeface2;
 
+            return this;
+        }
 
 
         public Builder setMessage(@StringRes int messageId) {
@@ -83,6 +88,8 @@ public class SpotsDialog extends AlertDialog {
         super(context, theme);
         this.message = message;
 
+
+
         setCancelable(cancelable);
         if (cancelListener != null) setOnCancelListener(cancelListener);
     }
@@ -95,6 +102,8 @@ public class SpotsDialog extends AlertDialog {
 
         setContentView(R.layout.the_spots_dialog);
         setCanceledOnTouchOutside(false);
+
+        typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/cav.ttf");
 
         initMessage();
         initProgress();
@@ -128,6 +137,8 @@ public class SpotsDialog extends AlertDialog {
     private void initMessage() {
         if (message != null && message.length() > 0) {
             ((TextView) findViewById(R.id.dialog_spots_title)).setText(message);
+
+            ((TextView) findViewById(R.id.dialog_spots_title)).setTypeface(typeface);
 
         }
     }
