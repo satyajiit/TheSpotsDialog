@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class SpotsDialog extends AlertDialog {
 
-    public static Typeface typeface;
+
 
     public static class Builder {
 
@@ -23,6 +23,7 @@ public class SpotsDialog extends AlertDialog {
         private String message;
         private int messageId;
         private int themeId;
+        private Typeface typeface;
         private boolean cancelable = true; // default dialog behaviour
         private OnCancelListener cancelListener;
 
@@ -36,8 +37,8 @@ public class SpotsDialog extends AlertDialog {
             return this;
         }
 
-        public Builder setTypeface(Typeface typeface2) {
-            typeface = typeface2;
+        public Builder setTypeface(Typeface typeface) {
+            this.typeface = typeface;
 
             return this;
         }
@@ -84,11 +85,13 @@ public class SpotsDialog extends AlertDialog {
     private AnimatedView[] spots;
     private AnimatorPlayer animator;
     private CharSequence message;
+    private Typeface typeface;
 
-    private SpotsDialog(Context context, String message, int theme, boolean cancelable, OnCancelListener cancelListener, Typeface tf) {
+
+    private SpotsDialog(Context context, String message, int theme, boolean cancelable, OnCancelListener cancelListener, Typeface typeface) {
         super(context, theme);
         this.message = message;
-        typeface = tf;
+        this.typeface = typeface;
 
 
         setCancelable(cancelable);
@@ -104,13 +107,13 @@ public class SpotsDialog extends AlertDialog {
         setContentView(R.layout.the_spots_dialog);
         setCanceledOnTouchOutside(false);
 
+        if (typeface == null)
         typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/cav.ttf");
 
         initMessage();
 
         initProgress();
 
-        ((TextView) findViewById(R.id.dialog_spots_title)).setTypeface(typeface);
 
 
     }
@@ -143,9 +146,7 @@ public class SpotsDialog extends AlertDialog {
     private void initMessage() {
         if (message != null && message.length() > 0) {
             ((TextView) findViewById(R.id.dialog_spots_title)).setText(message);
-
             ((TextView) findViewById(R.id.dialog_spots_title)).setTypeface(typeface);
-
         }
     }
 
