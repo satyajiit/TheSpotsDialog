@@ -126,10 +126,7 @@ On the pre-lollipop devices _DialogSpotColor_ item won't work. As workaround jus
 ===========
 ### Screenshots from Sample App
 
-<img src="/screenshots/ss1.png"  />
-<img src="/screenshots/ss2.png"  />
-<img src="/screenshots/ss3.png"  />
-<img src="/screenshots/ss4.png"  />
+<img src="/screenshots/ss1.png"  height="500" width="500"  /><img src="/screenshots/ss2.png"  height="500" width="500" /><img src="/screenshots/ss3.png"  height="500" width="500" /><img src="/screenshots/ss4.png"  height="500" width="500" />
 
 
 ### Developed By
