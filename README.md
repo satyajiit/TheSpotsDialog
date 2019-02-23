@@ -1,4 +1,4 @@
-# The Spots  progress dialog
+# The Spots  Progress Dialog
 
 [![PlayStore](https://img.shields.io/badge/Play%20Store-demo-blue.svg)](#)
 &nbsp;&nbsp;
