@@ -2,6 +2,11 @@ package com.satyajit.thespotsdialog;
 
 import android.animation.*;
 
+/**
+ *  Created on 24th Feb 2019
+ *  Satyajit Pradhan
+ *  It is a update to D-max Spots Dialog
+ */
 
 class AnimatorPlayer extends AnimatorListenerAdapter {
 

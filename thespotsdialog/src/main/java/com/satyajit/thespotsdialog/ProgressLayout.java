@@ -7,6 +7,11 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
+/**
+ *  Created on 24th Feb 2019
+ *  Satyajit Pradhan
+ *  It is a update to D-max Spots Dialog
+ */
 
 public class ProgressLayout extends FrameLayout {
 

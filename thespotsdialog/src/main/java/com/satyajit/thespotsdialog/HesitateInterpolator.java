@@ -2,6 +2,11 @@ package com.satyajit.thespotsdialog;
 
 import android.view.animation.Interpolator;
 
+/**
+ *  Created on 24th Feb 2019
+ *  Satyajit Pradhan
+ *  It is a update to D-max Spots Dialog
+ */
 
 class HesitateInterpolator implements Interpolator {
 

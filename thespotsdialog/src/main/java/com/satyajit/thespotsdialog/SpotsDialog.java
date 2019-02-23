@@ -12,6 +12,11 @@ import android.support.annotation.StyleRes;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ *  Created on 24th Feb 2019
+ *  Satyajit Pradhan
+ *  It is a update to D-max Spots Dialog
+ */
 
 public class SpotsDialog extends AlertDialog {
 
