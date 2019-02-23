@@ -67,12 +67,13 @@ public class SpotsDialog extends AlertDialog {
 
         public AlertDialog build() {
             return new SpotsDialog(
-                    context,
-                    messageId != 0 ? context.getString(messageId) : message,
-                    themeId != 0 ? themeId : R.style.SpotsDialogDefault,
-                    cancelable,
-                    cancelListener
-            );
+                                context,
+                                messageId != 0 ? context.getString(messageId) : message,
+                                themeId != 0 ? themeId : R.style.SpotsDialogDefault,
+                                cancelable,
+                    cancelListener,
+                    typeface
+                        );
         }
     }
 
@@ -84,10 +85,10 @@ public class SpotsDialog extends AlertDialog {
     private AnimatorPlayer animator;
     private CharSequence message;
 
-    private SpotsDialog(Context context, String message, int theme, boolean cancelable, OnCancelListener cancelListener) {
+    private SpotsDialog(Context context, String message, int theme, boolean cancelable, OnCancelListener cancelListener, Typeface tf) {
         super(context, theme);
         this.message = message;
-
+        typeface = tf;
 
 
         setCancelable(cancelable);
@@ -106,7 +107,12 @@ public class SpotsDialog extends AlertDialog {
         typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/cav.ttf");
 
         initMessage();
+
         initProgress();
+
+        ((TextView) findViewById(R.id.dialog_spots_title)).setTypeface(typeface);
+
+
     }
 
     @Override
