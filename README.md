@@ -2,7 +2,12 @@
 
 [![PlayStore](https://img.shields.io/badge/Play%20Store-demo-blue.svg)](#)
 &nbsp;&nbsp;
-[![](https://jitpack.io/v/satyajiit/TheSpotsDialog.svg)](https://jitpack.io/#satyajiit/TheSpotsDialog)
+[![](https://jitpack.io/v/satyajiit/TheSpotsDialog.svg)](https://jitpack.io/#satyajiit/TheSpotsDialog)&nbsp;&nbsp;
+[![Generic badge](https://img.shields.io/badge/Stable-YES-<COLOR>.svg)](#)&nbsp;&nbsp;
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)&nbsp;&nbsp;
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](#)
+
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](#)
 
 The Android AlertDialog with moving spots progress indicator packed as android library.
 
