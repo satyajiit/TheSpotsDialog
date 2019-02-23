@@ -1,4 +1,4 @@
-# Spots  progress dialog
+# The Spots  progress dialog
 
 [![PlayStore](https://img.shields.io/badge/Play%20Store-demo-blue.svg)](#)
 &nbsp;&nbsp;
@@ -124,10 +124,15 @@ On the pre-lollipop devices _DialogSpotColor_ item won't work. As workaround jus
 
 
 ===========
+### Screenshots from Sample App
+
+<img src="/screenshots/ss1.png"  height="500" width="500"  /><img src="/screenshots/ss2.png"  height="500" width="500" /><img src="/screenshots/ss3.png"  height="500" width="500" /><img src="/screenshots/ss4.png"  height="500" width="500" />
+
 
 ### Developed By
 
 Satyajit Pradhan - http://satyajiit.xyz
+
 Thanks to D-Max for the Idea.
 
 
