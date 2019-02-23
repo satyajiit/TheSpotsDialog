@@ -1,6 +1,6 @@
 # The Spots  Progress Dialog
 
-[![PlayStore](https://img.shields.io/badge/Play%20Store-demo-blue.svg)](#)
+[![PlayStore](https://img.shields.io/badge/Play%20Store-demo-blue.svg)](https://play.google.com/store/apps/details?id=com.satyajit.thespotsdialogsampleapp)
 &nbsp;&nbsp;
 [![](https://jitpack.io/v/satyajiit/TheSpotsDialog.svg)](https://jitpack.io/#satyajiit/TheSpotsDialog)&nbsp;&nbsp;
 [![Generic badge](https://img.shields.io/badge/Stable-YES-<COLOR>.svg)](#)&nbsp;&nbsp;
