@@ -60,9 +60,9 @@ val dialog: AlertDialog = SpotsDialog.Builder()
 dialog.dismiss()
 ```
 
-For adding Custom Typeface (JAVA):
+For adding Custom Typeface (KOTLIN):
 
-```java
+```kotlin
 val dialog: AlertDialog = SpotsDialog.Builder()
     .setContext(this)
     .setMessage(R.string.custom_title)
